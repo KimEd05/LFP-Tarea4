@@ -1,0 +1,18 @@
+digraph Lenguaje2 {
+
+	Inicial[shape = plaintext, label = ""];
+	rankdir = LR;
+	A [shape = circle];
+	B [shape = doublecircle];
+	C [shape = doublecircle];
+
+	Inicial -> A;
+	A -> A [label = "a"];
+	A -> B [label = "b"];
+	B -> C [label = "a"];
+	B -> B [label = "b"];
+	C -> A [label = "a"];
+	C -> B [label = "b"];
+
+}
+
